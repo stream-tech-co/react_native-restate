@@ -15,26 +15,36 @@ const COLLECTIONS = {
 };
 
 const propertyTypes = [
-  "House",
-  "Townhomes",
-  "Condos",
-  "Duplexes",
-  "Studios",
-  "Villa",
-  "Apartments",
-  "Others",
+  "Apartamento",
+  "Casa",
+  "Consultorio",
+  "Oficina",
+  "Local",
+  "Bodega",
+  "Lote",
+  "Finca",
+  "Parqueadero",
+  "Edificio",
+  "Apartaestudio",
+  "Hotel",
+  "Habitación",
 ];
 
 const facilities = [
-  "Laundry",
-  "Car Parking",
-  "Sports Center",
-  "Cutlery",
-  "Gym",
-  "Swimming pool",
-  "Wifi",
-  "Pet Center",
-];
+    "Cocina",
+    "Sala",
+    "Comedor",
+    "Balcón",
+    "Lavadero",
+    "Estudio",
+    "Depósito",
+    "Parqueadero",
+    "Ascensor",
+    "Piscina",
+    "Gimnasio",
+    "Parque",
+    "Vigilancia"
+  ];
 
 function getRandomSubset<T>(
   array: T[],
@@ -98,14 +108,14 @@ async function seed() {
         COLLECTIONS.AGENT!,
         ID.unique(),
         {
-          name: `Agent ${i}`,
-          email: `agent${i}@example.com`,
+          name: `Agente ${i}`,
+          email: `agente${i}@example.com`,
           avatar: agentImages[Math.floor(Math.random() * agentImages.length)],
         }
       );
       agents.push(agent);
     }
-    console.log(`Seeded ${agents.length} agents.`);
+    console.log(`Seeded ${agents.length} agentes.`);
 
     // Seed Reviews
     const reviews = [];
@@ -167,8 +177,8 @@ async function seed() {
           description: `This is the description for Property ${i}.`,
           address: `123 Property Street, City ${i}`,
           geolocation: `192.168.1.${i}, 192.168.1.${i}`,
-          price: Math.floor(Math.random() * 9000) + 1000,
-          area: Math.floor(Math.random() * 3000) + 500,
+          price: Math.floor(Math.random() * 2000) + 1000000,
+          area: Math.floor(Math.random() * 3) + 10,
           bedrooms: Math.floor(Math.random() * 5) + 1,
           bathrooms: Math.floor(Math.random() * 5) + 1,
           rating: Math.floor(Math.random() * 5) + 1,

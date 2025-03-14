@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "restate",
-    "slug": "restate",
+    "slug": "restate-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.streamtech.restateapp"
     },
     "web": {
       "bundler": "metro",
@@ -49,6 +50,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "6537fc1a-b2dc-4c86-b368-7eb29b359b41"
+      }
+    },
+    "owner": "streamtech"
   }
 }

@@ -88,7 +88,7 @@ const Property = () => {
             <View className="flex flex-row items-center gap-2">
               <Image source={icons.star} className="size-5" />
               <Text className="text-black-200 text-sm mt-1 font-rubik-medium">
-                {property?.rating} ({property?.reviews.length} reviews)
+                Estrato {property?.rating} 
               </Text>
             </View>
           </View>
@@ -98,25 +98,25 @@ const Property = () => {
               <Image source={icons.bed} className="size-4" />
             </View>
             <Text className="text-black-300 text-sm font-rubik-medium ml-2">
-              {property?.bedrooms} Beds
+              {property?.bedrooms} Habitaciones
             </Text>
             <View className="flex flex-row items-center justify-center bg-primary-100 rounded-full size-10 ml-7">
               <Image source={icons.bath} className="size-4" />
             </View>
             <Text className="text-black-300 text-sm font-rubik-medium ml-2">
-              {property?.bathrooms} Baths
+              {property?.bathrooms} Baños
             </Text>
             <View className="flex flex-row items-center justify-center bg-primary-100 rounded-full size-10 ml-7">
               <Image source={icons.area} className="size-4" />
             </View>
             <Text className="text-black-300 text-sm font-rubik-medium ml-2">
-              {property?.area} sqft
+              {property?.area} mts2
             </Text>
           </View>
 
           <View className="w-full border-t border-primary-200 pt-7 mt-5">
             <Text className="text-black-300 text-xl font-rubik-bold">
-              Agent
+              Contacto
             </Text>
 
             <View className="flex flex-row items-center justify-between mt-4">
@@ -145,7 +145,7 @@ const Property = () => {
 
           <View className="mt-7">
             <Text className="text-black-300 text-xl font-rubik-bold">
-              Overview
+              Descripcion
             </Text>
             <Text className="text-black-200 text-base font-rubik mt-2">
               {property?.description}
@@ -154,7 +154,7 @@ const Property = () => {
 
           <View className="mt-7">
             <Text className="text-black-300 text-xl font-rubik-bold">
-              Facilities
+              Caracteristicas
             </Text>
 
             {property?.facilities.length > 0 && (
@@ -193,7 +193,7 @@ const Property = () => {
           {property?.gallery.length > 0 && (
             <View className="mt-7">
               <Text className="text-black-300 text-xl font-rubik-bold">
-                Gallery
+                Galeria
               </Text>
               <FlatList
                 contentContainerStyle={{ paddingRight: 20 }}
@@ -214,7 +214,7 @@ const Property = () => {
 
           <View className="mt-7">
             <Text className="text-black-300 text-xl font-rubik-bold">
-              Location
+              Ubicación
             </Text>
             <View className="flex flex-row items-center justify-start mt-4 gap-2">
               <Image source={icons.location} className="w-7 h-7" />
@@ -241,7 +241,7 @@ const Property = () => {
 
                 <TouchableOpacity>
                   <Text className="text-primary-300 text-base font-rubik-bold">
-                    View All
+                    Ver todo
                   </Text>
                 </TouchableOpacity>
               </View>
@@ -258,19 +258,19 @@ const Property = () => {
         <View className="flex flex-row items-center justify-between gap-10">
           <View className="flex flex-col items-start">
             <Text className="text-black-200 text-xs font-rubik-medium">
-              Price
+              Precio
             </Text>
             <Text
               numberOfLines={1}
               className="text-primary-300 text-start text-2xl font-rubik-bold"
             >
-              ${property?.price}
+              ${property?.price.toLocaleString()}
             </Text>
           </View>
 
           <TouchableOpacity className="flex-1 flex flex-row items-center justify-center bg-primary-300 py-3 rounded-full shadow-md shadow-zinc-400">
             <Text className="text-white text-lg text-center font-rubik-bold">
-              Book Now
+              Agendar Visita
             </Text>
           </TouchableOpacity>
         </View>

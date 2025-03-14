@@ -65,7 +65,7 @@ const Profile = () => {
         contentContainerClassName="pb-32 px-7"
       >
         <View className="flex flex-row items-center justify-between mt-5">
-          <Text className="text-xl font-rubik-bold">Profile</Text>
+          <Text className="text-xl font-rubik-bold">Perfil</Text>
           <Image source={icons.bell} className="size-5" />
         </View>
 
@@ -83,12 +83,12 @@ const Profile = () => {
           </View>
         </View>
 
-        <View className="flex flex-col mt-10">
+        {/* <View className="flex flex-col mt-10">
           <SettingsItem icon={icons.calendar} title="My Bookings" />
           <SettingsItem icon={icons.wallet} title="Payments" />
-        </View>
+        </View> */}
 
-        <View className="flex flex-col mt-5 border-t pt-5 border-primary-200">
+        <View className="flex flex-col mt-10">
           {settings.slice(2).map((item, index) => (
             <SettingsItem key={index} {...item} />
           ))}
@@ -97,7 +97,7 @@ const Profile = () => {
         <View className="flex flex-col border-t mt-5 pt-5 border-primary-200">
           <SettingsItem
             icon={icons.logout}
-            title="Logout"
+            title="Cerrar Sesión"
             textStyle="text-danger"
             showArrow={false}
             onPress={handleLogout}

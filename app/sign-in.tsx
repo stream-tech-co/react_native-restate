@@ -25,7 +25,7 @@ const Auth = () => {
     if (result) {
       refetch();
     } else {
-      Alert.alert("Error", "Failed to login");
+      Alert.alert("Error", "No se pudo iniciar sesión");
     }
   };
 
@@ -44,16 +44,16 @@ const Auth = () => {
 
         <View className="px-10">
           <Text className="text-base text-center uppercase font-rubik text-black-200">
-            Welcome To Real Scout
+            Bienvenido a tu Inmobiliaria
           </Text>
 
           <Text className="text-3xl font-rubik-bold text-black-300 text-center mt-2">
-            Let's Get You Closer To {"\n"}
-            <Text className="text-primary-300">Your Ideal Home</Text>
+            Te acercamos {"\n"}
+            <Text className="text-primary-300">a tu Hogar Ideal</Text>
           </Text>
 
           <Text className="text-lg font-rubik text-black-200 text-center mt-12">
-            Login to Real Scout with Google
+            Inicia sesión con Google
           </Text>
 
           <TouchableOpacity
@@ -67,7 +67,7 @@ const Auth = () => {
                 resizeMode="contain"
               />
               <Text className="text-lg font-rubik-medium text-black-300 ml-2">
-                Continue with Google
+                Continuar con Google
               </Text>
             </View>
           </TouchableOpacity>

@@ -56,75 +56,44 @@ export const featuredCards = [
 ];
 
 export const categories = [
-  { title: "All", category: "All" },
-  { title: "Houses", category: "House" },
-  { title: "Condos", category: "Condos" },
-  { title: "Duplexes", category: "Duplexes" },
-  { title: "Studios", category: "Studios" },
-  { title: "Villas", category: "Villa" },
-  { title: "Apartments", category: "Apartments" },
-  { title: "Townhomes", category: "Townhomes" },
-  { title: "Others", category: "Others" },
+  { title: "Todos", category: "All" },
+  { title: "Casa", category: "Casa" },
+  { title: "Apartamento", category: "Apartamento" },
+  { title: "Finca", category: "Finca" },
+  { title: "Apartaestudio", category: "Aoartaestudio" },
+  { title: "Habitación", category: "Habitación" },
+  { title: "Lote", category: "Lote" },
+  { title: "Consultorio", category: "Consultorio" },
+  { title: "Oficina", category: "Oficina" },
+  { title: "Bodega", category: "Bodega" },
+  { title: "Local", category: "Local" },
+  { title: "Otros", category: "Otros" },
 ];
 
-export const settings = [
-  {
-    title: "My Bookings",
-    icon: icons.calendar,
-  },
-  {
-    title: "Payments",
-    icon: icons.wallet,
-  },
-  {
-    title: "Profile",
-    icon: icons.person,
-  },
-  {
-    title: "Notifications",
-    icon: icons.bell,
-  },
-  {
-    title: "Security",
-    icon: icons.shield,
-  },
-  {
-    title: "Language",
-    icon: icons.language,
-  },
-  {
-    title: "Help Center",
-    icon: icons.info,
-  },
-  {
-    title: "Invite Friends",
-    icon: icons.people,
-  },
-];
 
 export const facilities = [
   {
-    title: "Laundry",
+    title: "Cuarto de Lavado",
     icon: icons.laundry,
   },
   {
-    title: "Car Parking",
+    title: "Parqueadero",
     icon: icons.carPark,
   },
   {
-    title: "Sports Center",
+    title: "Centro Deportivo",
     icon: icons.run,
   },
   {
-    title: "Cutlery",
+    title: "Comedor",
     icon: icons.cutlery,
   },
   {
-    title: "Gym",
+    title: "Gimnasio",
     icon: icons.dumbell,
   },
   {
-    title: "Swimming pool",
+    title: "Piscina",
     icon: icons.swim,
   },
   {
@@ -161,5 +130,40 @@ export const gallery = [
   {
     id: 6,
     image: images.japan,
+  },
+];
+
+export const settings = [
+  {
+    title: "My Bookings",
+    icon: icons.calendar,
+  },
+  {
+    title: "Payments",
+    icon: icons.wallet,
+  },
+  {
+    title: "Perfil",
+    icon: icons.person,
+  },
+  {
+    title: "Notificaciones",
+    icon: icons.bell,
+  },
+  {
+    title: "Seguridad",
+    icon: icons.shield,
+  },
+  {
+    title: "Idioma",
+    icon: icons.language,
+  },
+  {
+    title: "Centro de Ayuda",
+    icon: icons.info,
+  },
+  {
+    title: "Invitar Amigos",
+    icon: icons.people,
   },
 ];
